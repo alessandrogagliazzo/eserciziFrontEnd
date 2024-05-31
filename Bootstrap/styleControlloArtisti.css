@@ -1,0 +1,138 @@
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: lightgray;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(29, 29, 29);
+}
+
+#Logo{
+  width: 120px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+h1{
+  color: white;
+  margin-left: 20px;
+  text-align: center;
+}
+
+#container-link-controllo-artisti{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.link-controllo {
+  margin-right: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(29, 29, 29);
+  background-color: #fff;
+  border: 1px solid rgb(29, 29, 29);
+  border-radius: 5px;
+}
+
+.link-controllo:hover{
+  background-color: rgb(29, 29, 29);
+  color: #fff;
+}
+
+#cuffie{
+  height: 120px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 5px;
+}
+
+table{
+  margin-top: 10px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td{
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th{
+  background-color: lightgray;
+}
+
+.img-tab{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+#container-liste{
+  display: flex;
+}
+
+ul{
+  margin-left: 300px;
+}
+
+ol{
+  margin-left: 0px;
+}
+
+li{
+  margin-bottom: 10px;
+}
+
+.container-eventi{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+iframe{
+  width: 100%;
+  height: 500px;
+}
+
+@media screen and (max-width: 768px){
+    #Logo{
+      width: 100px;
+      margin-right: 10px;
+    }
+    
+    h1{
+      margin-left: 10px;
+    }
+    
+    #container-link-controllo-artisti{
+      flex-direction: column;
+    }
+    
+    .link-controllo{
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    
+    ul{
+      margin-left: 0;
+    }
+    
+    iframe{
+      height: 300px;
+    }
+    
+    table{
+      display: none;
+    }
+    
+    #cuffie{
+      display: none;
+    }
+}
